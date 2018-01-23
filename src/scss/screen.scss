@@ -1,18 +1,23 @@
-
-
 /**
 * Screen.scss
-* Css de base, partagé par toutes les pages
+* Feuille regroupant tous les imports 
 */
-// Importations des fichiers de base.
+
+
+// Importations des fichiers de configuration / vendor.
 @import 'modules/minireset';
 @import 'modules/settings';
 @import 'modules/fonts';
 @import 'modules/grid';
 @import 'modules/tools';
 
-/* FEUILLE DE STYLE GLOBALE */
+//- Feuille de style de base
+@import "modules/base";
 
-body {
+//- Composants (Générique)
+@import 'components/header.scss';
+@import 'components/footer.scss';
 
-}
+
+//- A voir ensuite si il y a des styles spécifiques pour des composants sur une page unique auquel cas on peut imaginer :
+@import 'pages/homepage/_homepage.sass';
